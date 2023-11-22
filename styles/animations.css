@@ -1,0 +1,92 @@
+/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
+
+Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+✦ theme-dark — класс тёмной темы
+✦ theme-light — класс светлой темы
+✦ like-icon — для svg-иконки анимированного сердца
+✦ card__like-button — для кнопки Like рядом с иконкой
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
+✦ button__text — для обозначения текстового элемента внутри кнопки
+
+Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
+*/
+@keyframes play {
+    from {
+      left: -20px;
+    }
+  
+    to {
+      left: -12px;
+    }
+  }
+
+  .like-icon .main-body {
+    transition: fill 0.3s 0.05s;
+    fill: transparent;
+  }
+  
+  .like-icon .core {
+    transition: fill 0.3s; 
+    fill: transparent;
+  }
+  
+  .like-icon:hover .main-body {
+    fill: var(--themes-main-color);
+    transition: 0.3s;
+  }
+  
+  .like-icon:hover .core {
+    fill: var(--themes-main-color);
+    transition: 0.03s;
+  }
+  
+  .like-icon:active .main-body {
+    fill: var(--fill-heart);
+  }
+ 
+  .like-icon:active .core {
+    fill: var(--fill-heart);
+  }
+
+  .like-icon.is-liked .core {
+    fill: var(--fill-heart);
+  }
+
+  .like-icon.is-liked .main-body {
+    fill: var(--fill-heart);
+  }
+
+  .like-icon.is-liked .contour {
+    fill: var(--fill-heart);
+  }
+
+  .like-icon.is-liked .heart {
+    transform-origin: 50% 50%;
+    animation: heartScale 0.3s alternate 0.1s ease-in;
+  }
+
+  @keyframes heartScale {
+    0% {
+      transform: scale(1);
+    }
+
+    100% {
+      transform: scale(1.5);
+    }
+  }
+
+  .like-icon.is-liked .sparks {
+    animation: sparks 0.3s alternate 0.3s ease-in;
+  }
+
+  @keyframes sparks {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
