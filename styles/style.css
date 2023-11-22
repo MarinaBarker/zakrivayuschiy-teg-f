@@ -137,7 +137,7 @@
 .content-card {
   display: flex;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
   outline: 2px solid var(--themes-main-color);
 }
 
@@ -237,7 +237,7 @@
   background-color: var(--themes-bg-color);
   border: 2px solid var(--themes-main-color);
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
   cursor: pointer;
   z-index: 0;
 }
@@ -339,7 +339,6 @@ dialog::backdrop {
   line-height: 150%;
   text-transform: uppercase;
   font-family: var(--accent-font);
-  font-size: 14px;
 }
 
 .close {

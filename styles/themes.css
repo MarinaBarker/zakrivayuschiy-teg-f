@@ -30,9 +30,9 @@
 @media(prefers-color-scheme: dark) {
     :root {
         --themes-main-color: #00CC14;
-        --themes-bg-color: #000; 
+        --themes-bg-color: #000;
         --gradient: #000;
-        --linear-gradient: #007f0c, #004306; 
+        --linear-gradient: #007f0c, #004306;
         --mix-color: #00CC14;
         --accent-font-weight: 785;
         --main-font-weight: 465;
